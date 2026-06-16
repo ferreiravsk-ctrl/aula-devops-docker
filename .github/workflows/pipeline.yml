@@ -32,7 +32,7 @@ jobs:
 
       - name: Build Image
         run: |
-          docker push ferreiravsk/aula-devops:1.0.${{ github.run_number }}
+          docker build -t ferreiravsk/aula-devops:1.0.${{ github.run_number }}  .
 
       - name: Push Image
         run: | 
